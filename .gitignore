@@ -1,0 +1,8 @@
+# Built from the .gschema.xml file (glib-compile-schemas schemas)
+schemas/gschemas.compiled
+
+# Editors and OS
+.vscode/
+.idea/
+*.swp
+.DS_Store

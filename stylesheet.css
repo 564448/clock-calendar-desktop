@@ -1,0 +1,7 @@
+.triland-clock,
+.triland-cal {
+  spacing: 6px;
+}
+.triland-edit {
+  border: 2px dashed rgba(255, 255, 255, 0.8);
+}

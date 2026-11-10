@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.triland-clock" path="/org/gnome/shell/extensions/triland-clock/">
+    <key name="clock-enabled" type="b">
+      <default>true</default>
+      <summary>Show the clock on the desktop</summary>
+    </key>
+    <key name="clock-time-format" type="s">
+      <default>"%H:%M"</default>
+      <summary>Time line, GLib date format codes; empty hides it</summary>
+    </key>
+    <key name="clock-date-format" type="s">
+      <default>"%A %-d %B"</default>
+      <summary>Date line, GLib date format codes; empty hides it</summary>
+    </key>
+    <key name="clock-time-size" type="i">
+      <range min="16" max="300"/>
+      <default>72</default>
+      <summary>Font size of the time line in px</summary>
+    </key>
+    <key name="clock-font-size" type="i">
+      <range min="8" max="100"/>
+      <default>20</default>
+      <summary>Font size of the date line in px</summary>
+    </key>
+    <key name="clock-font-family" type="s">
+      <default>""</default>
+      <summary>Font family; empty uses the system font</summary>
+    </key>
+    <key name="clock-text-color" type="s">
+      <default>"rgb(255,255,255)"</default>
+      <summary>Text color (CSS)</summary>
+    </key>
+    <key name="clock-bg-opacity" type="i">
+      <range min="0" max="100"/>
+      <default>0</default>
+      <summary>Opacity of the card behind the calendar in percent</summary>
+    </key>
+    <key name="clock-radius" type="i">
+      <range min="0" max="40"/>
+      <default>18</default>
+      <summary>Card corner radius in px</summary>
+    </key>
+    <key name="clock-padding" type="i">
+      <range min="0" max="48"/>
+      <default>16</default>
+      <summary>Card padding in px</summary>
+    </key>
+    <key name="clock-pos-x" type="d">
+      <range min="0.0" max="1.0"/>
+      <default>0.15</default>
+      <summary>Horizontal position, 0 = left edge, 1 = right edge of the primary monitor</summary>
+    </key>
+    <key name="clock-pos-y" type="d">
+      <range min="0.0" max="1.0"/>
+      <default>0.12</default>
+      <summary>Vertical position, 0 = top edge, 1 = bottom edge of the primary monitor</summary>
+    </key>
+    <key name="cal-enabled" type="b">
+      <default>true</default>
+      <summary>Show the calendar on the desktop</summary>
+    </key>
+    <key name="cal-style" type="s">
+      <choices>
+        <choice value="grid"/>
+        <choice value="week"/>
+        <choice value="minimal"/>
+      </choices>
+      <default>"grid"</default>
+      <summary>Calendar layout: month grid, current week strip, or big day number</summary>
+    </key>
+    <key name="cal-week-start" type="i">
+      <range min="0" max="1"/>
+      <default>1</default>
+      <summary>First day of the week: 0 Sunday, 1 Monday</summary>
+    </key>
+    <key name="cal-grid-title-format" type="s">
+      <default>"%B %Y"</default>
+      <summary>Month grid: heading text, GLib date format codes</summary>
+    </key>
+    <key name="cal-week-title-format" type="s">
+      <default>"%A, %B %-d"</default>
+      <summary>Week strip: heading text, GLib date format codes</summary>
+    </key>
+    <key name="cal-weekday-format" type="s">
+      <default>"%a"</default>
+      <summary>Weekday names above the days, GLib date format codes</summary>
+    </key>
+    <key name="cal-minimal-day-format" type="s">
+      <default>"%-d"</default>
+      <summary>Minimal: big top line, GLib date format codes</summary>
+    </key>
+    <key name="cal-minimal-weekday-format" type="s">
+      <default>"%A"</default>
+      <summary>Minimal: middle line, GLib date format codes</summary>
+    </key>
+    <key name="cal-minimal-month-format" type="s">
+      <default>"%B %Y"</default>
+      <summary>Minimal: bottom line, GLib date format codes</summary>
+    </key>
+    <key name="cal-font-family" type="s">
+      <default>""</default>
+      <summary>Font family; empty uses the system font</summary>
+    </key>
+    <key name="cal-font-size" type="i">
+      <range min="8" max="48"/>
+      <default>16</default>
+      <summary>Base font size in px</summary>
+    </key>
+    <key name="cal-text-color" type="s">
+      <default>"rgb(255,255,255)"</default>
+      <summary>Text color (CSS)</summary>
+    </key>
+    <key name="cal-accent-color" type="s">
+      <default>"rgb(53,132,228)"</default>
+      <summary>Color of the highlighted day (CSS)</summary>
+    </key>
+    <key name="cal-bg-opacity" type="i">
+      <range min="0" max="100"/>
+      <default>0</default>
+      <summary>Opacity of the card behind the calendar in percent</summary>
+    </key>
+    <key name="cal-radius" type="i">
+      <range min="0" max="40"/>
+      <default>18</default>
+      <summary>Card corner radius in px</summary>
+    </key>
+    <key name="cal-padding" type="i">
+      <range min="0" max="48"/>
+      <default>16</default>
+      <summary>Card padding in px</summary>
+    </key>
+    <key name="cal-pos-x" type="d">
+      <range min="0.0" max="1.0"/>
+      <default>0.85</default>
+      <summary>Horizontal position, 0 = left edge, 1 = right edge of the primary monitor</summary>
+    </key>
+    <key name="cal-pos-y" type="d">
+      <range min="0.0" max="1.0"/>
+      <default>0.12</default>
+      <summary>Vertical position, 0 = top edge, 1 = bottom edge of the primary monitor</summary>
+    </key>
+    <key name="edit-mode" type="b">
+      <default>false</default>
+      <summary>Float above windows and desktop icons so the widget can be dragged</summary>
+    </key>
+  </schema>
+</schemalist>

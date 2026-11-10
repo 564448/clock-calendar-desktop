@@ -1,0 +1,8 @@
+{
+  "uuid": "triland-clock@knight.local",
+  "name": "Clock&Calendar Desktop",
+  "description": "Desktop clock and calendar widgets with custom date and time formats, font choice, free positioning and a built-in font browser.",
+  "shell-version": ["50"],
+  "settings-schema": "org.gnome.shell.extensions.triland-clock",
+  "version": 1
+}
